@@ -11,7 +11,7 @@ from functions import *
 from matplotlib import rcParams
 rcParams['pdf.fonttype'] = 42 # enables correct plotting of text for PDFs
 
-results_folder = '/home/jupyter/EXP-01058/cell2location_results'
+results_folder = '/home/jupyter/cell2location_validation/cell2location_results'
 
 # create paths and names to results folders for reference regression and cell2location models
 ref_run_name = f'{results_folder}/reference_signatures'
@@ -22,7 +22,7 @@ run_name = f'{results_folder}/cell2location_map'
 # -----------------------------------------------------------------------------------------------
 
 home_dir = "/home/jupyter"
-vis_hd_bin_dir_ = "EXP-01058/TIS05740-001-021/outs/binned_outputs/square_008um"
+vis_hd_bin_dir_ = "cell2location_validation/TIS05740-001-021/outs/binned_outputs/square_008um"
 bin_dir = os.path.join(home_dir, vis_hd_bin_dir_)
 
 # Reading in visium HD data
@@ -39,7 +39,7 @@ hd_adata = hd_adata[:, ~hd_adata.var['MT_gene'].values]
 # Loading reference model
 # -----------------------------------------------------------------------------------------------
 
-results_folder = '/home/jupyter/EXP-01058/cell2location_results'
+results_folder = '/home/jupyter/cell2location_validation/cell2location_results'
 
 # create paths and names to results folders for reference regression and cell2location models
 ref_run_name = f'{results_folder}/reference_signatures'

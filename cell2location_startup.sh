@@ -1,8 +1,8 @@
 #!bin/bash
 
-conda create -y --prefix /home/jupyter/EXP-01058/envs/cell2loc_env python=3.9
+conda create -y --prefix /home/jupyter/cell2location_validation/envs/cell2loc_env python=3.9
 
-conda activate "/home/jupyter/EXP-01058/envs/cell2loc_env"
+conda activate "/home/jupyter/cell2location_validation/envs/cell2loc_env"
 
 conda install -c conda-forge mamba -y
 conda install -c conda-forge ipykernel -y
